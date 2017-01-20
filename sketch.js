@@ -1361,7 +1361,7 @@ function sendShotputData(newShotputtData)
 function handleAcknowledgement() {
 	currentTime = second();
 	
-	if (abs(previousTime - currentTime) > 8)
+	if (abs(previousTime - currentTime) > 3)
 	{
 		previousTime = currentTime;
 		console.log(currentTime); // readyState will be 4
